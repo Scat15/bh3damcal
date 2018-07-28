@@ -24,7 +24,8 @@
       </view>    
   </view>
       <view class='output'>
-           <view class='printvalue'> 输出:<input class='printback' disabled=''></input></view>  
+           <view class='printvalue'> <text> 输出: </text>
+           <input class='value2'  type='text' disabled='false'></input>  </view>
            <!-- 该view行是输出的数据行，记得数据绑定，我禁用了这行文本框 -->
       </view>
 </view>

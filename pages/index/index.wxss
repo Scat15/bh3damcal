@@ -63,6 +63,7 @@ margin-left: 10rpx;
   background-color: white;
   border-radius: 10rpx;
   opacity: 0.85;
+ 
 }
 
 .logo{
@@ -88,17 +89,26 @@ float: right ;
   height: 250rpx;
   background-color: #e7e4fa;
   opacity: 0.85;
-  
+ overflow: hidden;
+ 
 }
 
-.printvalue{float: left;
-  margin-left: 20rpx;
-margin-top: 30rpx;
+.printvalue{
+
+  padding-left: 20rpx;
+padding-top: 10rpx;
    color: #292e5a;
+  display: flex;
+ 
    font-weight: bold;
-display: flex;
+overflow: hidden;
 }
-.printback{
-  margin-left: 20rpx;
-    display: flex;
+
+.value2{width:580rpx;
+      height: 25rpx;
+
+margin-left: 10rpx;
+ 
+
+ 
 }
