@@ -34,12 +34,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
-    logCode: null,
     url: 'https://gamepaper.cn',
-    openId: "",
-    id: "",
-    username: "",
-    nickname: "",
   }
 })

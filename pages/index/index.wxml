@@ -1,13 +1,67 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ <view class='container'> 
+  <image src='img/bg.jpg' class='pageBack'></image>
+  
+   <form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class='bianliang1'>
+   <view class='flex'>
+   <!-- 人物属性那一行 -->
+     <view class='shuxing'><text>人物属性</text></view>
+     <view><image class='logo' src='../../pages/index/img/logo.png'></image></view>
+   </view>
+
+   <image class='fengexian' src='../../pages/index/img/fenge.png'></image>
+
+     <view class='flex'>
+        <view class='variable'> <text>人物等级</text><input type='number' name='lv' class='valuep'></input>  </view>  
+        <view class='variable'> <text>攻击</text><input type='number' name='a' class='valuep'></input>  </view> 
+        <view class='variable'> <text>会心</text><input type='number' name='c' class='valuep'></input>  </view> 
+     </view>
+     <view>
+        <view class='variable'> <text>装备和技能带来的暴击率</text><input type='digit' name='jza' class='valuep2'></input>  </view> 
+        <view class='variable'> <text>装备和技能带来的爆击伤害加成</text><input type='digit' name='jz' class='valuep2'></input>  </view> 
+     </view>
+        
+        <view class='flex'> 
+             <view class='taozhuang1'>词缀A <image class='fengexian1' src='../../pages/index/img/fenge.png'></image> </view>
+
+            <view class='taozhuang2'>词缀B <image class='fengexian2' src='../../pages/index/img/fenge.png'></image></view>
+        </view>
+
+<view class='flex'>
+      <view class='variable3'> <text>词缀攻击力值</text><input type='text' name='af1' class='value'></input>  </view>  
+        <view class='variable4'> <text>词缀攻击力值</text><input type='text' name='af2' class='value'></input>  </view> 
+     </view>
+
+     <view class='flex'>
+         <view class='variable5'> <text>词缀暴击伤害加成</text><input type='text' name='bf1' class='value'></input>  </view> 
+        <view class='variable6'> <text>词缀暴击伤害加成</text><input type='text' name='bf2' class='value'></input>  </view>
+</view>
+     
+     <view class='flex'>
+      <view class='variable5'> <text>词缀会心值</text><input type='text' name='cf1' class='value'></input>  </view> 
+        <view class='variable6'> <text>词缀会心值</text><input type='text' name='cf2' class='value'></input>  </view>
+     </view>
+
+<image class='fengexian3' src='../../pages/index/img/fenge.png'></image>
+     
+        <view class='flex'>
+        <view class='del'><button formType="reset">清除</button> </view>
+        <view class='shu'>|</view>
+        <view class='pri'> <button formType="submit">输出 </button></view>
+        </view>
+
+    </view>
+    </form>
+
+      <view class='output'>
+           <view class='printvalue'> <text> 词缀A加成：{{item1}}% </text>
+           <input class='value2'  type='text' disabled='false'></input> 词缀B加成：{{item2}}% </view>
+           
+           <!-- 该view行是输出的数据行，记得数据绑定，我禁用了这行文本框 -->
+           <image class='logo2' src='../../pages/index/img/logo.png'></image>
+      </view>
+
+
 </view>
