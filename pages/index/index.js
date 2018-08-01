@@ -5,8 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     item1:0,
     item2:0,
+=======
+  
+>>>>>>> 889c759ee248b69347109157fc4494fa7f918e63
   },
 
   /**
@@ -63,6 +67,7 @@ Page({
    */
   onShareAppMessage: function () {
   
+<<<<<<< HEAD
   },
 
   formSubmit: function (e) {
@@ -86,4 +91,7 @@ Page({
 
   }
 
+=======
+  }
+>>>>>>> 889c759ee248b69347109157fc4494fa7f918e63
 })
