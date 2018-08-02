@@ -5,12 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-<<<<<<< HEAD
     item1:0,
     item2:0,
-=======
-  
->>>>>>> 889c759ee248b69347109157fc4494fa7f918e63
   },
 
   /**
@@ -66,8 +62,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
-<<<<<<< HEAD
+
   },
 
   formSubmit: function (e) {
@@ -81,8 +76,8 @@ Page({
       },
       success: function (res) {
         that.setData({
-          item1: res.data.value.current.item1,
-          item2: res.data.value.current.item2,
+          item1: res.data.value.current.item1.toFixed(2),
+          item2: res.data.value.current.item2.toFixed(2),
         });
       }
     })
@@ -91,7 +86,4 @@ Page({
 
   }
 
-=======
-  }
->>>>>>> 889c759ee248b69347109157fc4494fa7f918e63
 })
